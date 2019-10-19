@@ -1,0 +1,22 @@
+#preloader{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 99999999;
+}
+
+#status{
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url("../images/small-cups.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    caption-side: bottom;
+}
