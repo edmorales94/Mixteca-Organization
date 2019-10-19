@@ -9,5 +9,5 @@ function preloader() {
     }
     setTimeout(function () {
         loaderContainer.remove()
-    }, 2500);
+    }, 1000);
 }
