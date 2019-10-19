@@ -1,0 +1,27 @@
+{
+  "name": "mixteca-organization",
+  "version": "1.0.0",
+  "description": "This project contains the files for Mixteca Organization's website and and its 20th anniversary website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edmorales94/Mixteca-Organization.git"
+  },
+  "keywords": [
+    "Mixteca Organization",
+    "Event",
+    "20th Anniversary",
+    "Developer",
+    "Freelancer",
+    "Web-Development"
+  ],
+  "author": "Edgar I Morales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edmorales94/Mixteca-Organization/issues"
+  },
+  "homepage": "https://github.com/edmorales94/Mixteca-Organization#readme"
+}
