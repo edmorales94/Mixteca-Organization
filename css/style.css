@@ -22,7 +22,7 @@
 }
 
 .fade-in-out{
-    animation: fade-in-out 2s linear forwards;
+    animation: fade-in-out 1s linear forwards;
 }
 
 @keyframes fade-in-out{
