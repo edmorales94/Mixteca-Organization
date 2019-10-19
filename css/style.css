@@ -35,37 +35,37 @@
 }
 
 @-moz-keyframes fade-in-out {
-    0% {
+    0%, 100% {
         opacity:0;
     }
-    100% {
+    50% {
         opacity:1;
     }
 }
 
 @-webkit-keyframes fade-in-out {
-    0% {
+    0%, 100% {
         opacity:0;
     }
-    100% {
+    50% {
         opacity:1;
     }
 }
 
 @-o-keyframes fade-in-out {
-    0% {
+    0%, 100% {
         opacity:0;
     }
-    100% {
+    50% {
         opacity:1;
     }
 }
 
 @-ms-keyframes fade-in-out {
-    0% {
+    0%, 100% {
         opacity:0;
     }
-    100% {
+    50% {
         opacity:1;
     }
 }
