@@ -1,4 +1,5 @@
-function preloader() {
+$(function(){
+    function preloader() {
     let loader = document.getElementById("status");
     let loaderContainer = document.getElementById("preloader");
     loader.classList.forEach(function (el) {
@@ -11,3 +12,5 @@ function preloader() {
         loaderContainer.remove()
     }, 1000);
 }
+    preloader();
+});
