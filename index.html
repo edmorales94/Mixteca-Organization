@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar">
+<body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
     <!--<div id="preloader">
         <div id="status">
             <p>Loading...</p>
@@ -29,17 +29,17 @@
     </div>-->
 
     <header class="main-header">
-            <div class="main-nav nav-transparent">
-                <nav id="navbar-main" class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="main-nav">
+                <nav id="navbar-main" class="navbar navbar-expand-lg fixed-top navbar-transparent">
                     <a class="navbar-brand" href="#page-top">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationBar" aria-controls="navigationBar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="navigationBar">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link page-scroll" href="#">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link page-scroll" href="#page-top">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link page-scroll" href="#">About</a>
@@ -66,10 +66,65 @@
                     <div class="header-banner">
                         <h1>Mixteca's <span>20th Anniversary</span></h1>
                         <h3>May 7th, 2020</h3>
-                        <h4>Smack Mellow Art Gallery, 92 Plymouth Street, Brooklyn, NY 11201</h4>
+                        <h4>Smack Mellon Art Gallery, 92 Plymouth Street, Brooklyn, NY 11201</h4>
                         <div class="countdown" data-date="2020-05-07"></div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div id="about-text" class="col-md-6">
+                    <h2>About us</h2>
+                    <br>
+                    <p>Our mission is to empower the Mexican and Latin-American immigrants of the New York area by providing them access to services that enhance their quality of life and will allow them to reach sustainable social and economic development. We offer a variety of programs and services that respond to the specific needs of immigrant families and aim to build a supportive environment for the growing Mexican and Latin-American immigrant community.</p>
+                    <br>
+                    <p>Come celebrate with us our 20th Anniversary</p>
+                </div>
+                <div id="about-picture" class="col-md-6">
+                    <img src="images/About.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="venue" class="venue-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="section-title">
+                        <h2>Venue Information</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="venue-col">
+                        <img src="images/SmackMellonFacade.jpg" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="venue-col">
+                        <div class="info-box">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Smack Mellon Art Gallery</p>
+                            <br>
+                            <p>92 Plymouth Street, <br>Brooklyn, NY 11201</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div class="col-md-3">
+                    <div class="venue-col">
+                        <div class="info-box">
+                            <i class="fas fa-phone"></i>
+                            <p>345-565-3432</p>
+                        </div>
+                    </div>
+                </div>-->
             </div>
         </div>
     </section>
