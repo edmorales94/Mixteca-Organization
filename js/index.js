@@ -13,13 +13,14 @@ $(document).ready(function(){
     }, 1000);
 }
     $(window).scroll(function () {
-        if($(window).scrollTop() > 50){
-            document.getElementById("navbar-main").style.background = "-webkit-linear-gradient(to left, #c4499c, #ffe11d)";
+        if($(window).scrollTop() > 550){
+            document.getElementById("navbar-main").style.background = "linear-gradient(to left, #c4499c, #ffe11d)";
             console.log("worked");
         }
         else{
             //$('nav').classList.add("navbar-style");
-            document.getElementById("navbar-main").style.background
+            document.getElementById("navbar-main").style.transition = "background 3s ease-out";
+            document.getElementById("navbar-main").style.background = "rgba(0, 0, 0, 0.5)";
         }
     });
     //preloader();
