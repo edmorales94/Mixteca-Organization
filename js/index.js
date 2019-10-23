@@ -13,6 +13,7 @@ $(document).ready(function(){
     }, 1000);
 }
     preloader();
+
     $(window).scroll(function () {
         if($(window).scrollTop() > 550){
             document.getElementById("navbar-main").style.background = "linear-gradient(to left, #c4499c, #ffe11d)";
