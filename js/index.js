@@ -12,16 +12,16 @@ $(document).ready(function(){
         loaderContainer.remove()
     }, 1000);
 }
-    preloader();
+    //preloader();
 
     $(window).scroll(function () {
         if($(window).scrollTop() > 550){
             document.getElementById("navbar-main").style.background = "linear-gradient(to left, #c4499c, #ffe11d)";
+            $("#navbar-main").fadeIn(3000);
         }
         else{
-            //$('nav').classList.add("navbar-style");
-            document.getElementById("navbar-main").style.transition = "background 3s ease-out";
             document.getElementById("navbar-main").style.background = "rgba(0, 0, 0, 0.5)";
+            $("#navbar-main").fadeIn(3000);
         }
     });
 
