@@ -77,9 +77,10 @@
 }
 
 nav{
-    transition: background .5s ease-in-out;
+    transition: background 2s ease-in-out;
     background: rgba(0, 0, 0, 0.5);
 }
+
 .main-nav .navbar{
     margin-bottom: 0;
     padding: 10px 15px;
@@ -118,7 +119,6 @@ nav{
     padding: 180px 0 140px;
     background: url("../images/gallery.jpg") no-repeat center;
     background-size: cover;
-    position: relative;
 }
 
 .main-banner .header-banner{
