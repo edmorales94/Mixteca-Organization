@@ -17,7 +17,6 @@ $(document).ready(function(){
     $(window).scroll(function () {
         if($(window).scrollTop() > 550){
             document.getElementById("navbar-main").style.background = "linear-gradient(to left, #c4499c, #ffe11d)";
-            console.log("worked");
         }
         else{
             //$('nav').classList.add("navbar-style");
