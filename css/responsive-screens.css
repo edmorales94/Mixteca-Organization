@@ -1,0 +1,12 @@
+@media only screen and (max-width: 320px){
+
+    .main-banner{
+        padding: 50px 12px 40px;
+    }
+    .header-banner h1{
+        color: cyan;
+        font-size: 30px;
+        line-height: 40px;
+        padding: 20px 10px;
+    }
+}
