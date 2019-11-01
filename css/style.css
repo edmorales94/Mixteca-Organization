@@ -112,6 +112,11 @@ nav{
     background: transparent;
 }
 
+section{
+    padding: 80px 0 80px;
+    position: relative;
+}
+
 .main-banner {
     width: 100%;
     height: auto;
@@ -121,10 +126,15 @@ nav{
     background-size: cover;
 }
 
-.main-banner .header-banner{
+.header-banner{
     padding: 50px 20px;
+    text-align: center;
     background: rgba(0, 0, 0, 0.8);
     border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius:30px;
 }
 
 .header-banner h1{
@@ -144,3 +154,5 @@ nav{
     color: white;
     margin-bottom: 20px;
 }
+
+
