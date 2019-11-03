@@ -53,7 +53,14 @@ $(document).ready(function(){
             let tickets = $("#eventbrite-widget-container-79932912493");
             tickets.fadeIn(1100);
             $("#hide-tickets").show();
-            this.style.display = "none"
+            this.style.display = "none";
+        });
+
+        let closeTickets = document.getElementById("hide-tickets");
+        closeTickets.addEventListener("click", function () {
+            $("#eventbrite-widget-container-79932912493").fadeOut(1100);
+            $("#rsvp").fadeIn(1200);
+            this.style.display = "none";
         });
     }
 
