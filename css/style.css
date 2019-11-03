@@ -178,4 +178,25 @@ section{
     font-size: 16px;
 }
 
+#about{
+
+}
+
+#invitation{
+    padding: 65px;
+    margin: auto;
+    width: 60%;
+    border-style: solid;
+    border-color: deeppink purple orange rgba(255,232,17,0.94);
+    border-width: 8px;
+}
+
+#invitation h3{
+    margin-left: 25%;
+}
+
+#rsvp{
+    margin-left: 45%;
+}
+
 
