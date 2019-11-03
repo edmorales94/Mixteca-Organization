@@ -60,6 +60,11 @@ $(document).ready(function(){
         }
     });
 
+    let rsvp = document.getElementById("rsvp");
+    rsvp.addEventListener("click", function () {
+       let tickets = $("#eventbrite-widget-container-79932912493");
+       tickets.fadeIn(1100);
+    });
     let exampleCallback = function() {
         console.log('Order complete!');
     };
