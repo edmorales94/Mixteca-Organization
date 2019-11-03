@@ -1,7 +1,3 @@
-.container {
-    padding: 0;
-}
-
 html{
     height: 100%;
     margin: 0;
@@ -206,6 +202,10 @@ section{
 #rsvp{
     margin-left: 45%;
     margin-top: 25px;
+}
+
+#eventbrite-widget-container-79932912493{
+    display: none;
 }
 
 
