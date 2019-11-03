@@ -61,10 +61,13 @@ $(document).ready(function(){
     });
 
     let rsvp = document.getElementById("rsvp");
-    rsvp.addEventListener("click", function () {
+    rsvp.addEventListener("click", function (event) {
        let tickets = $("#eventbrite-widget-container-79932912493");
-       tickets.fadeIn(1100);
+        tickets.fadeIn(1100);
+        $("#hide-tickets").show();
+        this.style.display = "none"
     });
+
     let exampleCallback = function() {
         console.log('Order complete!');
     };
