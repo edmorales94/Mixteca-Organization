@@ -1,3 +1,16 @@
+.container {
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
 #preloader{
     position: fixed;
     top: 0;
@@ -177,15 +190,10 @@ section{
     padding-top: 5px;
     font-size: 16px;
 }
-
-#about{
-
-}
-
 #invitation{
     padding: 65px;
     margin: auto;
-    width: 60%;
+    width: 90%;
     border-style: solid;
     border-color: deeppink purple orange rgba(255,232,17,0.94);
     border-width: 8px;
@@ -197,6 +205,7 @@ section{
 
 #rsvp{
     margin-left: 45%;
+    margin-top: 25px;
 }
 
 
