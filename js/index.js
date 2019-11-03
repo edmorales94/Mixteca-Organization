@@ -48,12 +48,11 @@ $(document).ready(function(){
     }
 
     function ticketsButtons(){
-        let rsvp = document.getElementById("rsvp");
-        rsvp.addEventListener("click", function (event) {
-            let tickets = $("#eventbrite-widget-container-79932912493");
-            tickets.fadeIn(1100);
-            $("#hide-tickets").show();
-            this.style.display = "none";
+        let rsvp = $("#rsvp");
+        rsvp.click(function () {
+            $("#eventbrite-widget-container-79932912493").fadeIn(1050);
+            $("#hide-tickets").fadeIn(1100);
+            rsvp.fadeOut(1200);
         });
 
         let closeTickets = document.getElementById("hide-tickets");
