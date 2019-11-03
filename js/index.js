@@ -47,6 +47,17 @@ $(document).ready(function(){
         }, 1000);
     }
 
+    function ticketsButtons(){
+        let rsvp = document.getElementById("rsvp");
+        rsvp.addEventListener("click", function (event) {
+            let tickets = $("#eventbrite-widget-container-79932912493");
+            tickets.fadeIn(1100);
+            $("#hide-tickets").show();
+            this.style.display = "none"
+        });
+    }
+
+
     //preloader();
 
     $(window).scroll(function () {
@@ -60,13 +71,9 @@ $(document).ready(function(){
         }
     });
 
-    let rsvp = document.getElementById("rsvp");
-    rsvp.addEventListener("click", function (event) {
-       let tickets = $("#eventbrite-widget-container-79932912493");
-        tickets.fadeIn(1100);
-        $("#hide-tickets").show();
-        this.style.display = "none"
-    });
+    countDown();
+
+    ticketsButtons();
 
     let exampleCallback = function() {
         console.log('Order complete!');
@@ -82,5 +89,4 @@ $(document).ready(function(){
         iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
         onOrderComplete: exampleCallback  // Method called when an order has successfully completed
     });
-    countDown();
 });
