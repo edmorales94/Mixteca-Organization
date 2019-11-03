@@ -20,8 +20,8 @@ $(document).ready(function(){
             let remaining = deadline - now;
 
             //conversion from milliseconds to months
-            let seconds = 1000;
-            let _minute = seconds *60;
+            let milliseconds = 1000;
+            let _minute = milliseconds *60;
             let _hour = _minute * 60;
             let _day = _hour * 24;
             let _month = _day * 30;
