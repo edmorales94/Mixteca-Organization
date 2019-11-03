@@ -72,7 +72,7 @@ $(document).ready(function(){
             $("#navbar-main").fadeIn(3000);
         }
         else{
-            document.getElementById("navbar-main").style.background = "rgba(0, 0, 0, 0.5)";
+            document.getElementById("navbar-main").style.background = "rgba(0, 0, 0, 0.1)";
             $("#navbar-main").fadeIn(3000);
         }
     });
