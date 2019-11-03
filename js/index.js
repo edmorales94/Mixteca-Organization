@@ -50,16 +50,16 @@ $(document).ready(function(){
     function ticketsButtons(){
         let rsvp = $("#rsvp");
         rsvp.click(function () {
+            rsvp.fadeOut(1100);
             $("#eventbrite-widget-container-79932912493").fadeIn(1050);
             $("#hide-tickets").fadeIn(1100);
-            rsvp.fadeOut(1200);
         });
 
-        let closeTickets = document.getElementById("hide-tickets");
-        closeTickets.addEventListener("click", function () {
+        let closeTickets = $("#hide-tickets");
+        closeTickets.click(function () {
             $("#eventbrite-widget-container-79932912493").fadeOut(1100);
+            closeTickets.fadeOut(1100);
             $("#rsvp").fadeIn(1200);
-            this.style.display = "none";
         });
     }
 
