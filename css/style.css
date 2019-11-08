@@ -130,13 +130,13 @@ section{
     width: 100%;
     height: auto;
     overflow-x: hidden;
-    padding: 180px 0 140px;
+    padding: 110px 0 110px;
     background: url("../images/gallery.jpg") no-repeat center;
     background-size: cover;
 }
 
 .header-banner{
-    padding: 50px 20px 10px 20px;
+    padding: 20px 10px 20px 10px;
     text-align: center;
     background: rgba(0, 0, 0, 0.8);
     border-radius: 30px;
