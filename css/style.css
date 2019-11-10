@@ -204,6 +204,15 @@ section{
     -ms-transform: translate(-100px, 0px);
     transform: translate3d(-100px, 0px, 0px);
 }
+
+.about-animation.slide-left.in-view{
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+}
 #invitation{
     padding: 65px;
     margin: auto;
