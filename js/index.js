@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    let window = $(window);
 
     function preloader() {
     let loader = document.getElementById("status");
@@ -49,27 +48,6 @@ $(document).ready(function(){
         }, 1000);
     }
 
-    function check_if_in_view() {
-        let animation_elements = $(".about-animation");
-        let window_height = window.height();
-        let window_top_position = window.scrollTop();
-        let window_bottom_position = (window_top_position + window_height);
-
-        $.each(animation_elements, function () {
-            let element = $(this);
-            let element_height = element.outerHeight();
-            let element_top_position = element.offset().top;
-            let element_bottom_position = (element_top_position + element_height);
-
-            if((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)){
-                element.addClass('in-view');
-            }
-            else{
-                element.removeClass('in-view');
-            }
-        });
-    }
-
     function ticketsButtons(){
         let rsvp = $("#rsvp");
         rsvp.click(function () {
@@ -89,8 +67,8 @@ $(document).ready(function(){
 
     //preloader();
 
-    window.scroll(function () {
-        if(window.scrollTop() > 550){
+    $(window).scroll(function () {
+        if($(window).scrollTop() > 550){
             document.getElementById("navbar-main").style.background = "linear-gradient(to left, #c4499c, #ffe11d)";
             $("#navbar-main").fadeIn(3000);
         }
@@ -101,8 +79,7 @@ $(document).ready(function(){
     });
 
     countDown();
-    window.on('scroll resize', check_if_in_view);
-    window.trigger('scroll');
+
     ticketsButtons();
 
     let exampleCallback = function() {
