@@ -188,13 +188,29 @@ section{
     font-size: 16px;
 }
 
-.slide-in{
+.fading-in{
     opacity: 0;
     transition: opacity 200ms ease-in;
 }
 
-.slide-in.appear{
+.fading-in.appear{
     opacity: 1;
+}
+
+.from-left{
+    transform: translateX(-80%);
+}
+
+.from-right{
+    transform: translateX(80%);
+}
+
+.from-left, .from-right{
+    transition: transform 450ms ease-in;
+}
+
+.from-left.appear, .from-right.appear{
+    transform: translateX(0);
 }
 
 #invitation{
