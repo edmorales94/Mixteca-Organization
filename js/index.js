@@ -2,23 +2,15 @@ $(document).ready(function(){
     const navbar = document.getElementById("navbar-main");
     const header = document.getElementById("main-header");
 
+    const sliders = document.querySelectorAll(".slide-in");
+
     const options = {
         rootMargin: "500px 0px 0px 0px"
     };
-    const aboutSectionObserver = new IntersectionObserver(function(entries){
-        entries.forEach(function (entry) {
-            console.log(entry.target);
-            if(!entry.isIntersecting){
-                navbar.classList.remove("navbar-transparent-style");
-                navbar.classList.add("navbar-style");
-            }
-            else{
-                navbar.classList.remove("navbar-style");
-                navbar.classList.add("navbar-transparent-style");
-            }
-        })
-    },options);
 
+    const slideOptions = {
+        threshold: .5
+    };
 
     function preloader() {
     let loader = document.getElementById("status");
@@ -30,6 +22,19 @@ $(document).ready(function(){
         loaderContainer.remove();
     }, 1000);
 }
+
+    const aboutSectionObserver = new IntersectionObserver(function(entries){
+        entries.forEach(function (entry) {
+            if(!entry.isIntersecting){
+                navbar.classList.remove("navbar-transparent-style");
+                navbar.classList.add("navbar-style");
+            }
+            else{
+                navbar.classList.remove("navbar-style");
+                navbar.classList.add("navbar-transparent-style");
+            }
+        })
+    },options);
 
     function countDown(){
         let deadline = new Date("may 07, 2020 19:00:00").getTime();
@@ -65,6 +70,19 @@ $(document).ready(function(){
         }, 1000);
     }
 
+    const slideOnScroll = new IntersectionObserver(function(entries, slideOnScroll){
+        entries.forEach(function (entry) {
+            if(!entry.isIntersecting){
+                return;
+            }
+            else{
+                entry.target.classList.add("appear");
+                slideOnScroll.unobserve(entry.target);
+            }
+        });
+    }, slideOptions);
+
+
     function ticketsButtons(){
         let rsvp = $("#rsvp");
         rsvp.click(function () {
@@ -98,7 +116,12 @@ $(document).ready(function(){
     });*/
 
     aboutSectionObserver.observe(header);
+
     countDown();
+
+    sliders.forEach(function (slider) {
+        slideOnScroll.observe(slider);
+    });
 
     ticketsButtons();
 
@@ -116,4 +139,5 @@ $(document).ready(function(){
         iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
         onOrderComplete: exampleCallback  // Method called when an order has successfully completed
     });
+
 });
