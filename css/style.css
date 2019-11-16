@@ -85,6 +85,7 @@ body{
     /*background: linear-gradient(to left, #c4499c, #ffe11d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: background-color 250ms ease-in;
 }
+
 .navbar-transparent-style{
     background-color: transparent;
     transition: background-color 280ms ease-out;
@@ -185,6 +186,15 @@ section{
 #clock-message{
     padding-top: 5px;
     font-size: 16px;
+}
+
+.slide-in{
+    opacity: 0;
+    transition: opacity 280ms ease-in;
+}
+
+.slide-in.appear{
+    opacity: 1;
 }
 
 #invitation{
