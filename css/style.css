@@ -80,13 +80,14 @@ body{
 }
 
 .navbar-style{
-    background: #ffe11d;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #c4499c, #ffe11d);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #c4499c, #ffe11d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: rgba(0, 0, 0, 1);  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to left, #c4499c, #ffe11d);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to left, #c4499c, #ffe11d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: background-color 250ms ease-in;
 }
 .navbar-transparent-style{
-    background: transparent;
-    transition: background 250ms ease-in;
+    background-color: transparent;
+    transition: background-color 280ms ease-out;
 }
 
 .main-nav .navbar{
