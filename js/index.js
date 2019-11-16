@@ -1,6 +1,6 @@
 $(document).ready(function(){
     const navbar = document.getElementById("navbar-main");
-    const aboutSection = document.getElementById("main-header");
+    const header = document.getElementById("main-header");
 
     const options = {
         rootMargin: "500px 0px 0px 0px"
@@ -97,7 +97,7 @@ $(document).ready(function(){
         }
     });*/
 
-    aboutSectionObserver.observe(aboutSection);
+    aboutSectionObserver.observe(header);
     countDown();
 
     ticketsButtons();
