@@ -85,7 +85,7 @@ body{
     background: linear-gradient(to left, #c4499c, #ffe11d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .navbar-transparent-style{
-    background: rgba(0, 0, 0, 0);
+    background: transparent;
     transition: background 250ms ease-in;
 }
 
