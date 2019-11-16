@@ -1,4 +1,25 @@
 $(document).ready(function(){
+    const navbar = document.getElementById("navbar-main");
+    const aboutSection = document.getElementById("about");
+
+    const options = {
+        rootMargin: "-100px 0px 0px 0px"
+    };
+    const aboutSectionObserver = new IntersectionObserver(function(entries){
+        entries.forEach(function (entry) {
+            console.log(entry.target);
+            if(entry.isIntersecting){
+                navbar.classList.remove("navbar-transparent-style");
+                navbar.classList.add("navbar-style");
+                console.log("added colors");
+            }
+            else{
+                navbar.classList.remove("navbar--style");
+                navbar.classList.add("navbar-transparent-style");
+            }
+        })
+    },options);
+
 
     function preloader() {
     let loader = document.getElementById("status");
@@ -78,6 +99,7 @@ $(document).ready(function(){
         }
     });*/
 
+    aboutSectionObserver.observe(aboutSection)
     countDown();
 
     ticketsButtons();
