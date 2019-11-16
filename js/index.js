@@ -67,7 +67,7 @@ $(document).ready(function(){
 
     //preloader();
 
-    $(window).scroll(function () {
+    /*$(window).scroll(function () {
         if($(window).scrollTop() > 550){
             document.getElementById("navbar-main").style.background = "linear-gradient(to left, #c4499c, #ffe11d)";
             $("#navbar-main").fadeIn(3000);
@@ -76,7 +76,7 @@ $(document).ready(function(){
             document.getElementById("navbar-main").style.background = "rgba(0, 0, 0, 0.1)";
             $("#navbar-main").fadeIn(3000);
         }
-    });
+    });*/
 
     countDown();
 
