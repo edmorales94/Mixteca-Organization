@@ -1,20 +1,19 @@
 $(document).ready(function(){
     const navbar = document.getElementById("navbar-main");
-    const aboutSection = document.getElementById("about");
+    const aboutSection = document.getElementById("main-header");
 
     const options = {
-        rootMargin: "-100px 0px 0px 0px"
+        rootMargin: "500px 0px 0px 0px"
     };
     const aboutSectionObserver = new IntersectionObserver(function(entries){
         entries.forEach(function (entry) {
             console.log(entry.target);
-            if(entry.isIntersecting){
+            if(!entry.isIntersecting){
                 navbar.classList.remove("navbar-transparent-style");
                 navbar.classList.add("navbar-style");
-                console.log("added colors");
             }
             else{
-                navbar.classList.remove("navbar--style");
+                navbar.classList.remove("navbar-style");
                 navbar.classList.add("navbar-transparent-style");
             }
         })
@@ -24,14 +23,11 @@ $(document).ready(function(){
     function preloader() {
     let loader = document.getElementById("status");
     let loaderContainer = document.getElementById("preloader");
-    loader.classList.forEach(function (el) {
-        console.log(el)
-    });
     if (loader.className.indexOf('fade-in-out')!==1){
        loader.classList.add('fade-in-out');
     }
     setTimeout(function () {
-        loaderContainer.remove()
+        loaderContainer.remove();
     }, 1000);
 }
 
@@ -86,20 +82,22 @@ $(document).ready(function(){
     }
 
 
-    //preloader();
+    preloader();
 
     /*$(window).scroll(function () {
-        if($(window).scrollTop() > 550){
-            document.getElementById("navbar-main").style.background = "linear-gradient(to left, #c4499c, #ffe11d)";
-            $("#navbar-main").fadeIn(3000);
+        if($(window).scrollTop() > 555){
+            document.getElementById("navbar-main").classList.remove("navbar-transparent-style");
+            document.getElementById("navbar-main").classList.add("navbar-style");
+
         }
         else{
-            document.getElementById("navbar-main").style.background = "rgba(0, 0, 0, 0.1)";
+            document.getElementById("navbar-main").classList.remove("navbar-style");
+            document.getElementById("navbar-main").classList.add("navbar-transparent-style");
             $("#navbar-main").fadeIn(3000);
         }
     });*/
 
-    aboutSectionObserver.observe(aboutSection)
+    aboutSectionObserver.observe(aboutSection);
     countDown();
 
     ticketsButtons();
