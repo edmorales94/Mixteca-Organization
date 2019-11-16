@@ -2,7 +2,10 @@ $(document).ready(function(){
     const navbar = document.getElementById("navbar-main");
     const header = document.getElementById("main-header");
 
-    const sliders = document.querySelectorAll(".slide-in");
+    const faders = document.querySelectorAll(".fading-in");
+    const sliders = document.querySelectorAll("slider");
+    console.log("sliders: ");
+    console.log(sliders);
 
     const options = {
         rootMargin: "500px 0px 0px 0px"
@@ -119,7 +122,7 @@ $(document).ready(function(){
 
     countDown();
 
-    sliders.forEach(function (slider) {
+    faders.forEach(function (slider) {
         slideOnScroll.observe(slider);
     });
 
@@ -139,5 +142,12 @@ $(document).ready(function(){
         iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
         onOrderComplete: exampleCallback  // Method called when an order has successfully completed
     });
+
+    /*sliders.forEach(function (slider) {
+        slideOnScroll.observe(slider);
+    });*/
+    for (let i = 0; i < sliders.length; i++){
+        slideOnScroll.observe(sliders[i]);
+    }
 
 });
